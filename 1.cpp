@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main(){
-	unsigned long n=1,i,j,x,k;
-	int l=0;
+	unsigned long n=1,i,j,x,k=1,l=0;
 	if(n>=1&&n<=1000000)
 		scanf("%ld",&n);
 	if(n==1)
