@@ -17,7 +17,7 @@ int main(){
 			k++;
 	}
 	i--;
-	if(i==n&&l==3)
+	if(i==n&&l>=3)
 		printf("Not Cube Free");
 	else
 		printf("%ld",k);
