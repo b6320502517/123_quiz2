@@ -3,8 +3,7 @@ int main(){
 	unsigned long n=1,i,j,x,k=1,l=0,a=0,b=0;
 	if(n>=1&&n<=1000000)
 		scanf("%ld",&n);
-	if(n==1)
-		printf("1");
+
 	for(i=2;i<=n;i++){
 		x=i;
 		a=0;
