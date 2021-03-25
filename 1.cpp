@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-	unsigned long n=1,i,j,x;
-	int k=1,l=0;
+	unsigned long n=1,i,j,x,k;
+	int l=0;
 	if(n>=1&&n<=1000000)
 		scanf("%ld",&n);
 	if(n==1)
@@ -15,17 +15,14 @@ int main(){
 				x/=j;	
 			}
 		}
-		//printf("%d",l);
-			if(l!=3)
-				k++;
-
-			//printf("%ld\n",i);
+		if(l!=3)
+			k++;
 	}
 	i--;
 	if(i==n&&l==3)
 		printf("Not Cube Free");
 	else
-		printf("%d",k);
+		printf("%ld",k);
 	
 	return 0;
 }
