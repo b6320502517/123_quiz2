@@ -6,7 +6,7 @@ int main(){
 
 	for(i=2;i<=n;i++){
 		x=i;
-		a=0,b=0;
+		a=0;b=0;
 		for(j=2;x!=1;j++){
 			l=0;
 			while(x%j==0){
@@ -21,8 +21,8 @@ int main(){
 		else
 			k++;
 	}
-	i--;
-	if(i==n&&b!=0)
+
+	if(b!=0)
 		printf("Not Cube Free");
 	else
 		printf("%ld",k);
