@@ -8,12 +8,13 @@ int main(){
 	for(i=2;i<=n;i++){
 		x=i;
 		a=0;
+		b=0;
 		for(j=2;x!=1;j++){
 			l=0;
 			while(x%j==0){
 				l++;
 				x/=j;
-				printf("%ld %ld\n",l,j);	
+				//printf("%ld %ld\n",l,j);	
 			}
 			if(l>=3)
 				a++;
