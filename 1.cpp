@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-	unsigned long n=1,i,j,x,k=1,l=0;
+	unsigned long n=1,i,j,x,k=1,l=0,a=0;
 	if(n>=1&&n<=1000000)
 		scanf("%ld",&n);
 	if(n==1)
@@ -13,12 +13,15 @@ int main(){
 				l++;
 				x/=j;	
 			}
+			if(l>=3)
+				a++;
 		}
-		if(l!=3)
+		if(l!=3&&a==0)
 			k++;
+		a=0;
 	}
 	i--;
-	if(i==n&&l==3)
+	if(i==n&&l>=3)
 		printf("Not Cube Free");
 	else
 		printf("%ld",k);
